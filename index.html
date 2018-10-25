@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Git e GitHub, come rompere il ghiaccio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Marco Lombardo</h1>
+        <p>Git e GitHub, come rompere il ghiaccio</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Git e GitHub, <br>rompere il ghiaccio</h2>
+        <p><a href="http://www.marcolombardo.com">Marco Lombardo</a></p>
+        <figure>
+            <img class="cover" src="pictures/cover.jpg" alt="Git e flusso di lavoro di Git">
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: darkslategray;
+                text-align: center;
+                font-size: 60px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: darkslategray;
+                font-style: italic;
+                font-size: 30px;
+            }
+
+            #cover p a {
+                color: darkslategray;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/marco.jpg" alt="Marco Lombardo">
+            <figcaption class="copyright right white">
+                <a href="http://www.marcolombardo.com/">Marco Lombardo</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/industria.jpg" alt="Industria Italiana del Software Libero">
+            <figcaption class="copyright right white">
+                <a href="https://www.industriasoftwarelibero.it/">Industria</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git.jpg" alt="Git">
+            <figcaption class="copyright right white">
+                <a href="https://git-scm.com/">Git</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/github.jpg" alt="GitHub">
+            <figcaption class="copyright right white">
+                <a href="https://github.com/">Github</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/gitlab.jpg" alt="Gitlab">
+            <figcaption class="copyright right white">
+                <a href="https://gitlab.com/">Gitlab</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/editor-di-testo.jpg" alt="Editor di testo">
+            <figcaption class="copyright right white">
+                <a href="https://atom.io">Atom</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/creare-repo.jpg" alt="Creare un repositpory">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/url-repository.jpg" alt="url del repository">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/primo-commit.jpg" alt="Primo commit">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/initial-commit.jpg" alt="Initial commit">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git clone</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-clone.jpg" alt="Git clone">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/cartella-scrivania.jpg" alt="Cartella scrivania">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/contenuto-cartella-clonata.jpg" alt="Contenuto cartella clonata">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/start-bootstrap.jpg" alt="Start bootstrap">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/cartelle-a-confronto.jpg" alt="Cartelle a confronto">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/one-page-wonder.jpg" alt="One page wonder">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git status</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/primo-git-status.jpg" alt="primo git status">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git add</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-add.jpg" alt="Git add">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git commit</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/primo-git-commit.jpg" alt="Primo git commit">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git log</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/primo-git-log.jpg" alt="Primo git log">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/secondo-git-status.jpg" alt="Secondo git status">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git push</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/primo-git-push.jpg" alt="Primo git push">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/cartella-github.jpg" alt="Cartella GitHub">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/due-commit.jpg" alt="Due commit">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/atom-title.jpg" alt="Atom title">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git diff</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-diff.jpg" alt="Git diff">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-commit-title.jpg" alt="Git commit title">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-log-title.jpg" alt="Git log title">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git show</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-show-title.jpg" alt="Git show title">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/atom-header.jpg" alt="Atom header">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/firefox-header.jpg" alt="Firefox header">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-diff-header.jpg" alt="Git diff header">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-commit-header.jpg" alt="Git commit header">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-push-header.jpg" alt="Git push header">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-log-header.jpg" alt="Git log header">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-show-header.jpg" alt="Git show header">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/github-log-header.jpg" alt="Github log header">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/github-show-header.jpg" alt="Github show header">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git branch</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-branch.jpg" alt="Git branch">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/index-css.jpg" alt="Index css">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/custom-css.jpg" alt="Custom css">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/giornata-verde.jpg" alt="Giornata verde">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-add-custom-css.jpg" alt="Add custom css">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-commit-custom-css.jpg" alt="Commit custom css">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-log-css.jpg" alt="Log custom css">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-show-css.jpg" alt="Git show css">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git checkout</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-checkout-master.jpg" alt="Git checkout master">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/firefox-master.jpg" alt="Firefox master">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/atom-lug.jpg" alt="Atom lug">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/firefox-lug.jpg" alt="Firefox lug">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-commit-navbar.jpg" alt="Git commit navbar">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-log-navbar.jpg" alt="Git log navbar">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git merge</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-merge.jpg" alt="Git merge">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/nano-merge.jpg" alt="Nano merge">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-log-merge.jpg" alt="Git log merge">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/firefox-merge.jpg" alt="firefox merge">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git branch -d</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/eliminare-branch.jpg" alt="eliminare branch">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-push-merge.jpg" alt="git push merge">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/github-merge.jpg" alt="github merge">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/github-commit-merge.jpg" alt="github commit merge">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/branch-dinuovobianco.jpg" alt="branch dinuovobianco">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/css-white.jpg" alt="css white">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/firefox-white.jpg" alt="Firefox white">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/commit-white.jpg" alt="Commit white">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-push-dinuovobianco.jpg" alt="Git push dinuovobianco">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git push --set-upstream origin nomeramo</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-set-dinuovobianco.jpg" alt="Git set dinuovobianco">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/github-branch-dinuovobianco.jpg" alt="Github branch dinuovobianco">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Pull request</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/pull-request.jpg" alt="Pull request">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/dettagli-pull-request.jpg" alt="Dettagli pull request">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Merge</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/merge-pull-request.jpg" alt="Merge pull request">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/merged-pull-request.jpg" alt="Merged pull request">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/github-log-merged.jpg" alt="Github log merged">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/delete-dinuovobianco.jpg" alt="Delete dinuovobianco">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Git pull</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-pull.jpg" alt="Git pull">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/git-log-finale.jpg" alt="Git log finale">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/bottone-fork.jpg" alt="Bottone fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/fork.jpg" alt="Fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/clone-fork.jpg" alt="Clone fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/cartella-fork.jpg" alt="Cartella fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/branch-fork.jpg" alt="Branch fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/readme-fork.jpg" alt="Readme fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/commit-fork.jpg" alt="Commit fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/push-fork.jpg" alt="Push fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/compare-fork.jpg" alt="Compare fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/pull-request-fork.jpg" alt="Pull request fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/comparing-fork.jpg" alt="Pull request fork">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">GitHub Page</h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/githubpage-repo.jpg" alt="GitHub Page Repo">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/githubpage-settings.jpg" alt="GitHub Page Settings">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/githubpage-hosting.jpg" alt="GitHub Page Hosting">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/github-desktop.jpg" alt="GitHub Desktop">
+            <figcaption class="copyright right white">
+                <a href="https://desktop.github.com/">GitHub Desktop</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/udacity-git.jpg" alt="Udacity Git">
+            <figcaption class="copyright right white">
+                <a href="https://eu.udacity.com/course/version-control-with-git--ud123">Udacity Git</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/amazon-git.jpg" alt="Amazon Git">
+            <figcaption class="copyright right white">
+                <a href="https://www.amazon.it/Rys-Tutorial-English-Ryan-Hodson-ebook/dp/B00QFIA5OC/ref=sr_1_6?ie=UTF8&qid=1540316593&sr=8-6&keywords=git">Amazon Git</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/youtube-git.jpg" alt="Youtube Git">
+            <figcaption class="copyright right white">
+                <a href="https://youtu.be/1h9_cB9mPT8">Youtube Git</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2></h2>
+        <figure>
+            <img class="cover" src="pictures/grazie.jpg" alt="Contatti">
+            <figcaption class="copyright right white">
+                <a href="http://www.marcolombardo.com/">Marco Lombardo</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 2018 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
